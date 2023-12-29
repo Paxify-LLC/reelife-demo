@@ -25,8 +25,8 @@ const interval = setInterval(() => {
       style: 1,
       isPreviewMode: false,
       elementId: "paxify-app",
-      uid: "khUPDz1BMpgDLclzPc8pJIG8lfg1",
-      storeId: "076262c3-8552-4613-a39c-cf330738a2ac",
+      uid: "MqCJYGz4mISSkerq6HiDuOJmdNX2",
+      storeId: "000443bd-0b86-43a7-a519-66d31c9558c1",
     });
     circle.render();
   }
