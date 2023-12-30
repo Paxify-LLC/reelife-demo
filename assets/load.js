@@ -15,19 +15,23 @@ const loadScripts = () => {
   document.head.appendChild(stylesheet);
 };
 
+const initialiseApp = () => {
+  const circle = new window.ReelsInitializer({
+    style: 1,
+    isPreviewMode: false,
+    elementId: "paxify-app",
+    uid: "MqCJYGz4mISSkerq6HiDuOJmdNX2",
+    storeId: "000443bd-0b86-43a7-a519-66d31c9558c1",
+  });
+  circle.render();
+};
+
 const interval = setInterval(() => {
   if (!document.getElementById("reels-script")) {
     loadScripts();
   } else {
-    clearInterval(interval);
-
-    const circle = new window.ReelsInitializer({
-      style: 1,
-      isPreviewMode: false,
-      elementId: "paxify-app",
-      uid: "MqCJYGz4mISSkerq6HiDuOJmdNX2",
-      storeId: "000443bd-0b86-43a7-a519-66d31c9558c1",
-    });
-    circle.render();
+    initialiseApp();
   }
+
+  if (document.getElementById("story-container")) clearInterval(interval);
 }, 500);
