@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -80,6 +82,7 @@ p {
 .header .row {
   margin-top: 70px;
 }
+
 .categories {
   margin: 70px 0;
 }
@@ -527,6 +530,10 @@ form a {
   }
   .cart-info p {
     display: none;
+  }
+
+  .header .col-2 {
+    text-align: left;
   }
 }
 
