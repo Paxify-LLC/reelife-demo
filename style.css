@@ -553,3 +553,30 @@ form a {
   margin: 20px 20px 20px 0;
   background-color: #eee;
 }
+
+.website-banner {
+  min-height: 200px;
+  padding: 20px;
+  padding-top: 50px;
+  background: radial-gradient(#fff, #ffd6d6);
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.website-banner span {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .website-banner span {
+    font-size: 20px;
+  }
+}
